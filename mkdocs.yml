@@ -1,0 +1,87 @@
+# project information
+site_name: "Omio CNC X6-2200EPL Documentation"
+site_author: "Stephen Eaton"
+site_description: "documentation for cnc router - OmnioCNC X6-2200EPL"
+
+# Configuration
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - header.autohide
+
+# Page Tree
+nav:
+  - Home: index.md
+  - Checklists:
+      - checklists/sample.md
+      - checklists/sample2.md
+  - Hardware:
+      - Overview: hardware/overview.md
+      - Mechanical: hardware/mechanical.md
+      - License: license.md
+  - Firmware:
+      - Overview: firmware/overview.md
+      - License: license.md
+  - Bill of Materials:
+      - bom.md
+  - Design:
+      - design/design.md
+  - Authors: authors.md
+  - Change Log: changelog.md
+  - References: references.md
+
+# Repository
+repo_name: "madeinoz67/omiocnc-x6-2200epl"
+repo_url: https://github.com/madeinoz67/omiocnc-x6-2200epl
+edit_uri: ""
+
+# plugins
+plugins:
+  - search
+  - mermaid2
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js
+
+# extensions
+markdown_extensions:
+  - abbr
+  - attr_list
+  - admonition
+  - footnotes
+  - meta
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# Copyright
+copyright: Copyright &copy; 2021 Stephen Eaton
+
+# footer customisation
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/madeinoz67/omiocnc-x6-2200epl
+# Google Analytics
+#google_analytics:
+#  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+# - auto

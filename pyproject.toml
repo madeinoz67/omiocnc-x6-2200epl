@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "omiocnc-x6-2200epl"
+version = "0.0.0"
+description = "documentation for cnc router - OmnioCNC X6-2200EPL"
+authors = ["Stephen Eaton"]
+license = "CC-A-SA"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mkdocs-material = "^7.0.6"
+mkdocs-mermaid2-plugin = "^0.5.1"
+mkdocs-macros-plugin = "^0.5.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
