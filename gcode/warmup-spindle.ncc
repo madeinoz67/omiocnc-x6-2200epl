@@ -1,0 +1,25 @@
+(Quick and Dirty Spindle Warmup Routine)
+S4000 M03
+P120000 G04 (Warmup Spindle 4000rpm)
+S5000 M03
+P120000 G04 (Warmup Spindle 45000rpm)
+S6000 M03
+P120000 G04 (Warmup Spindle 6000rpm)
+S7000 M03
+P120000 G04 (Warmup Spindle 7000rpm)
+S8000 M03
+P120000 G04 (Warmup Spindle 8000rpm)
+S9000 M03
+P120000 G04 (Warmup Spindle 9000rpm)
+S10000 M03
+P120000 G04 (Warmup Spindle 10000rpm)
+S12000 M03
+P120000 G04 (Warmup Spindle 12000rpm)
+S15000 M03
+P120000 G04 (Warmup spindle 15000rpm)
+S18000 M03
+P120000 G04 (Warmup Spindle 18000rpm)
+S20000 M03
+P120000 G04 (Warmup spindle 20000rpm)
+M05
+M30 (End of program)

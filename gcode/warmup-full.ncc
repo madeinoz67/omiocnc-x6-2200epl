@@ -1,0 +1,69 @@
+( CNC Warmup Routine for OMIO X6-2200EPL)
+( subroutines need to be supported by the controller )
+( Axis travel ranges.  Customise for your machine  )
+#60=0  (Min X Travel)
+#61=350 (Max X Travel)
+#62=0  (Min Y Travel)
+#63=500  (Max Y Travel)
+#64=0  (Min Z Travel)
+#65=80 (Max Z Travel)
+
+( Amount of dwell after axis travel. ) 
+( Adjust so total time of each spindle rpm )
+( is about 200 seconds )
+#66=200000
+
+(Feedrate that axis warmup will be performed at)
+#67=1000
+
+O000 (Main routine)
+( Safe Starting Conditions )
+G0
+G17
+G21 (Metric)
+G54
+G90
+G98
+M05
+( Alternate spindle speed with axis warmup. )
+( Adjust for your spindle's speed ranges. )
+G28
+S4000 M3
+M98 P200 (Warmup axes)
+S5000 M3
+M98 P200 (Warmup axes)
+S6000 M3
+M98 P200 (Warmup axes)
+S7000 M3
+M98 P200 (Warmup axes)
+S8000 M3
+M98 P200 (Warmup axes)
+S9000 M3
+M98 P200 (Warmup axes)
+S10000 M3
+M98 P200 (Warmup axes)
+S12000 M3
+M98 P200 (Warmup axes)
+S15000 M3
+M98 P200 (Warmup axes)
+S18000 M3
+M98 P200 (Warmup axes)
+S20000 M3
+M98 P200 (Warmup axes)
+S22000 M3
+M98 P200 (Warmup axes)
+M5 
+G28
+M30 (End of program)
+
+O200 (Axis warm up subprogram)
+G28
+F#67 G01 
+Z#64 (Do Z first and leave Z parked high for the rest )
+Z#65
+X#61
+Y#63
+X#60
+Y#62
+G04 P#66 (waiting for axis to complete)
+M99 (Return from subprogram)
