@@ -7,12 +7,12 @@ Documentation for my OmioCNC X6-2200EPL CNC router
 ## Directory structure
 
     .
-    ├── datasheets          # data sheets and manuals
+    ├── manuals             # data sheets and manuals
     ├── docs                # toplevel of mkdocs documentation
     │   ├── checklists      
     │   ├── design
     │   ├── firmware
     │   ├── hardware
     │   └── images
-    ├── firmware
+    ├── firmware            # firmware binaries
     └── gcode               # gcode used
