@@ -24,10 +24,11 @@ nav:
       - Overview: hardware/overview.md
       - Spindle: hardware/spindle.md
       - Cooling: hardware/cooling.md
+      - Air: hardware/air.md
+      - Table: hardware/table.md
   - Firmware:
       - Overview: firmware/overview.md
-  - Design:
-      - design/design.md
+
   - Authors: authors.md
   - Change Log: changelog.md
   - License: license.md
