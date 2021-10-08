@@ -15,6 +15,10 @@ Below are some handy resource links.
 
 * [OMIO CNC](https://www.omiocnc.com/).
 * [cookiecutter-kicad](https://github.com/madeinoz67/cookiecutter-kicad) a cookiecutter template for KiCad Projects that is used as the base for this project.
+* DDCSV3.1 Standalone Motion Controller:
+  * Official Firmware <http://www.ddcnc.com/?m=home&c=Lists&a=index&tid=106&lang=en> 
+  * Facebook Group <https://www.facebook.com/groups/1724999967517167> 
+  * Support forum <http://bbs.ddcnc.com/forum.php?mod=forumdisplay&fid=64>
 
 ## Authors
 
