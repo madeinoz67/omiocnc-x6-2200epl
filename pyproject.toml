@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "omiocnc-x6-2200epl"
-version = "0.0.0"
+version = "0.0.1"
 description = "documentation for cnc router - OmnioCNC X6-2200EPL"
 authors = ["Stephen Eaton"]
 license = "CC-A-SA"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-mkdocs-material = "^7.0.6"
+mkdocs-material = "^7.3.2"
 mkdocs-mermaid2-plugin = "^0.5.1"
 mkdocs-macros-plugin = "^0.5.5"
 
