@@ -1,0 +1,238 @@
+#1   -t2 -s1 "language setting" -s3  "0:eng,1:chs" -m16 -min=0.000 -max=1.000 -i0 "Eng" -i1 "ÖÐÎÄ"
+#2   -t1 -s1 "Display response during working" -m16 -min=400 -max=10000
+#3   -t2 -s1 "Function of tool path key" -m0 -min=0.000 -max=1.000 -i0  "tool path" -i1  "Try cutting "
+#5   -t1 -s1 "minimum log radius of 4axis machining" -s2 "mm" -m1  -min=3.000 -max=999.999
+#6   -t2 -s1 "A axis rotate reference axis" -m1 -min=0.000 -max=3.000 -i0 "X axis" -i1 "Y axis" -i2 "Z axis"-i3 "not rotate"
+#8   =1.000
+#9   =1.000
+#12  =1.000
+#13  =1.000
+#14  =1.000
+#15  -t2 -s1 "Speed Selection" -s3 "0:set by G code,1:use default speed" -m4 -min=0.000 -max=1.000 -i0 "G code"-i1 "default"
+#16  -t2 -s1 "current coordinate system" -s3 "0:G53,1:G54,2:G55,3:G56,4:G57,5:G58,6:G59,7:MACH"-m5 -min=1.000 -max=7.000 -i0 "G53"-i1 "G54" -i2 "G55" -i3 "G56" -i4 "G57" -i5 "G58" -i6 "G59" -i7 "MACH "
+#18  -t1=200.0
+#19  -t1=200.0
+#20  -t1=3.0
+#33  -t1 -s1 "Motor start speed" -s2 "mm/min" -m2 -min=0.000 -max=999.000
+#34  -t1 -s1 "X axis pulse equivalency" -s2 "pulse/mm" -m2 -min=50.000 -max=99999.000
+#35  -t1 -s1 "Y axis pulse equivalency" -s2 "pulse/mm" -m2 -min=50.000 -max=99999.000
+#36  -t1 -s1 "Z axis pulse equivalency" -s2 "pulse/mm" -m2 -min=50.000 -max=99999.000
+#37  -m0
+#38  -t1 -s1 "A axis pulse equivalency" -s2 "" -m2 -min=50.000 -max=999999.000
+#39  -t2 -s1 "A axis pulse unit" -m2 -min=0.000 -max=1.000 -i0 "pulse/deg" -i1 "pulse/circle "
+#40  -t2 -s1 "AB axis Selection" -m2 -min=0.000 -max=1.000 -i0 "A axis" -i1 "B axis "
+#41  -t1 -s1 "X Axis max speed in M_Ctrl mode" -s2 "mm/min" -m3 -min=99.000 -max=99999.000 
+#42  -t1 -s1 "Y Axis max speed in M_Ctrl mode" -s2 "mm/min" -m3 -min=99.000 -max=99999.000 
+#43  -t1 -s1 "Z Axis max speed in M_Ctrl mode" -s2 "mm/min" -m3 -min=99.000 -max=99999.000 
+#44  -t1 -s1 "A Axis max speed in M_Ctrl mode" -s2 "deg/min" -m3 -min=99.000 -max=99999.000
+#45  -t1 -s1 "X axis start Acc in M_Ctrl mode" -s2 "mm/s2" -m3 -min=9.000 -max=9999.000
+#46  -t1 -s1 "Y axis start Acc in M_Ctrl mode" -s2 "mm/s2" -m3 -min=9.000 -max=9999.000
+#47  -t1 -s1 "Z axis start Acc in M_Ctrl mode" -s2 "mm/s2" -m3 -min=9.000 -max=9999.000
+#48  -t1 -s1 "A axis start Acc in M_Ctrl mode" -s2 "deg/s2" -m3 -min=9.000 -max=9999.000
+#49  -t0 -s1 "HOME times" -m8 -min=1.000 -max=5.000            
+#50  -t2 -s1 "HOME signal Effective when HOME" -m8 -min=0.000 -max=1.000 -i0 "Ignore HOME" -i1 "Continue HOME "
+#51  -t2 -s1 "Enable limit signal when HOME" -s3 "0:Disable,1:Enable" -m8 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#52  -t2 -s1 "Enable X Home Searching function" -s3 "0:not enable,1:enable" -m8 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#53  -t2 -s1 "Enable Y Home Searching function" -s3 "0:not enable,1:enable" -m8 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#54  -t2 -s1 "Enable Z Home Searching function" -s3 "0:not enable,1:enable" -m8 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#55  -t2 -s1 "Enable Z Home Searching function" -s3 "0:not enable,1:enable" -m8 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#56  -t1 -s1 "X axis Home speed" -s2 "mm/min" -m8 -min=99.000 -max=99999.000
+#57  -t1 -s1 "Y axis Home speed" -s2 "mm/min" -m8 -min=99.000 -max=99999.000
+#58  -t1 -s1 "Z axis Home speed" -s2 "mm/min" -m8 -min=99.000 -max=99999.000
+#59  -t1 -s1 "A axis Home speed" -s2 "deg/min" -m8 -min=99.000 -max=99999.000
+#60  -t2 -s1 "X axis Home signal Electric Level" -m8 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#61  -t2 -s1 "Y axis Home signal Electric Level" -m8 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#62  -t2 -s1 "Z axis Home signal Electric Level" -m8 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#63  -t2 -s1 "A axis Home signal Electric Level" -m8 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#64  -t2 -s1 "X axis Home direction" -m8 -min=0.000 -max=1.000 -i0 "Negative" -i1 "Positive "
+#65  -t2 -s1 "Y axis Home direction" -m8 -min=0.000 -max=1.000 -i0 "Negative" -i1 "Positive "
+#66  -t2 -s1 "Z axis Home direction" -m8 -min=0.000 -max=1.000 -i0 "Negative" -i1 "Positive "
+#67  -t2 -s1 "A axis Home direction" -m8 -min=0.000 -max=1.000 -i0 "Negative" -i1 "Positive "
+#68  -t2 -s1 "Tool Setting function mode " -m9 -min=0.000 -max=2.000 -i0 "Disable" -i1 "mode 1" -i2 "mode 2 "
+#69  -t1 -s1 "Thickness of tool sensor" -s2 "mm" -m9 -min=-99.000 -max=99.000
+#70  -t2 -s1 "Probe signal electric level" -m9 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#71  -t2 -s1 "Initial tool's position" -m9 -min=0.000 -max=1.000 -i0 "current position" -i1 "fixed position "
+#72  -t1 -s1 "Initial probe position on X axis" -s2 "mm" -m9 -min=-9999.000 -max=9999.000
+#73  -t1 -s1 "Initial probe position on Y axis" -s2 "mm" -m9 -min=-9999.000 -max=9999.000
+#74  -t1 -s1 "Initial probe position on Z axis" -s2 "mm" -m9 -min=-9999.000 -max=9999.000
+#75  -t1 -s1 "back distance after probe" -s2 "mm" -m9 -min=0.000 -max=99.000
+#76  -t1 -s1 "default operation speed" -s2 "mm/min" -m4 -min=10.000 -max=99999.000
+#77  -t1 -s1 "maximum speed" -s2 "mm/min" -m4 -min=99.000 -max=99999.000
+#78  -t1 -s1 "Z axis lifting protection speed" -s2 "mm/min" -m4 -min=99.000 -max=99999.000
+#79  -t1 -s1 "Z axis dropping protection speed" -m4 -min=99.000 -max=99999.000
+#80  -t1 -s1 "G0 Speed" -s2 "mm/min" -m4 -min=99.000 -max=99999.000
+#82  -t1 -s1 "Z axis safe height" -s2 "mm" -m4 -min=0.000 -max=99.000
+#83  -t1 -s1 "X axis back distance after Home" -s2 "mm" -m8 -min=0.000 -max=99.000
+#84  -t1 -s1 "Y axis back distance after Home" -s2 "mm" -m8 -min=0.000 -max=99.000
+#85  -t1 -s1 "Z axis back distance after Home" -s2 "mm" -m8 -min=0.000 -max=99.000
+#86  -t1 -s1 "A axis back distance after Home" -s2 "deg" -m8 -min=0.000 -max=360.000
+#88  -t2 -s1 "enable of beep " -m16 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#89  -t1 -s1 "Z axis back distance when pause" -s2 "mm" -m4 -min=0.000 -max=99.000
+#98  -t1 -s1 "maximum spindle speed" -s2 "rpm" -m6 -min=99.000 -max=99999.000
+#99  -t1 -s1 "operation acceleration" -s2 "mm/s2" -m4 -min=9.000 -max=9999.000
+#100 -t1 -s1 "X axis manual control speed" -s2 "mm/min" -m3 -min=99.000 -max=99999.000
+#101 -t1 -s1 "Y axis manual control speed" -s2 "mm/min" -m3 -min=99.000 -max=99999.000
+#102 -t1 -s1 "Z axis manual control speed" -s2 "mm/min" -m3 -min=99.000 -max=99999.000
+#103 -t1 -s1 "A axis manual control speed" -s2 "deg/min" -m3 -min=99.000 -max=99999.000
+#104 -t2 -s1 "A axis optimal path when G0 run" -m1 -min=0.000 -max=1.000 -i0 "No" -i1 "Yes "
+#108 -t2 -s1  "M Bus IO command response" -s3 "0:not response,1:response" -m7 -min=0.000 -max=1.000 -i0 "No" -i1 "Yes "
+#109 -t0 -s1  "M Bus IO default status" -m7 -min=0 -max=4294967295
+#192 -t1=100.0
+#193 -t1=100.0
+#194 -t1=3.0
+#195 =0
+#196 =0
+#218 -t2 -s1 "Cycle Start key mode selection" -m16 -min=0.000 -max=1.000 -i0 "Pause start" -i1 "Restart "
+#219 -t2 -s1 "If Stop Spindle when pause" -m6 -min=0.000 -max=1.000 -i0 "No" -i1 "Yes "
+#220 -t2 -s1 "Spindle speed selection" -s3 "0:set by G code,1:default speed of spindle" -m6 -min=0.000 -max=1.000 -i0 "G code" -i1 "default "
+#221 -t1 -s1 "default spindle speed" -s2 "rpm" -m6 -min=10.000 -max=99999.000
+#222 -t2 -s1 "Spindle commands M3/M5 response" -s3 "0:not response,1:response" -m6 -min=0.000 -max=1.000 -i0 "No" -i1 "Yes "
+#223 -t2 -s1 "response of M code(M8/M9,M10/M11)" -s3 "0:not response,1:response" -m7 -min=0.000 -max=1.000 -i0 "No" -i1 "Yes "
+#224 -t1 -s1 "Spindle M3/M4/M5 response Duration" -s2 "s" -m6 -min=0.000 -max=9.000
+#225 -t1 -s1 "delay time of M8/M9" -s2 "s" -m7 -min=0.000 -max=9.000
+#226 -t1 -s1 "delay time of M10/M11" -s2 "s" -m7 -min=0.000 -max=9.000
+#227 -t2 -s1 "Spindle switch Active level" -m6 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#228 -t2 -s1 "M8/M9 active electric level" -m7 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#229 -t2 -s1 "M10/M11 active electric level" -m7 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#250 -t2 -s1 "real track paint enable" -m16 -min=0.000 -max=1.000 -i0 "disable" -i1 "enable "
+#253 -t2 -s1 "track paint mode" -m16 -min=0.000 -max=1.000 -i0 "Statue Mode" -i1 "Line Mode "
+#263 -t1 -s1 "X axis stop Acc in M_Ctrl mode" -s2 "mm/s2" -m3 -min=9.000 -max=9999.000
+#264 -t1 -s1 "Y axis stop Acc in M_Ctrl mode" -s2 "mm/s2" -m3 -min=9.000 -max=9999.000
+#265 -t1 -s1 "Z axis stop Acc in M_Ctrl mode" -s2 "mm/s2" -m3 -min=9.000 -max=9999.000
+#266 -t1 -s1 "A axis stop Acc in M_Ctrl mode" -s2 "deg/s2" -m3 -min=9.000 -max=9999.000
+#267 -t1 -s1 "H00 tool offset" -s2 "mm" -m0 -min=-999.999 -max=999.999
+#268 -t1 -s1 "H01 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#269 -t1 -s1 "H02 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#270 -t1 -s1 "H03 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#271 -t1 -s1 "H04 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#272 -t1 -s1 "H05 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#273 -t1 -s1 "H06 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#274 -t1 -s1 "H07 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#275 -t1 -s1 "H08 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#276 -t1 -s1 "H09 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#277 -t1 -s1 "H10 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#278 -t1 -s1 "H11 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#279 -t1 -s1 "H12 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#280 -t1 -s1 "H13 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#281 -t1 -s1 "H14 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#282 -t1 -s1 "H15 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#283 -t1 -s1 "D00 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#284 -t1 -s1 "D01 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#285 -t1 -s1 "D02 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#286 -t1 -s1 "D03 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#287 -t1 -s1 "D04 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#288 -t1 -s1 "D05 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#289 -t1 -s1 "D06 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#290 -t1 -s1 "D07 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#291 -t1 -s1 "D08 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#292 -t1 -s1 "D09 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#293 -t1 -s1 "D10 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#294 -t1 -s1 "D11 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#295 -t1 -s1 "D12 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#296 -t1 -s1 "D13 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#297 -t1 -s1 "D14 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#298 -t1 -s1 "D15 tool offset" -s2 "mm" -m15 -min=-999.999 -max=999.999
+#299 -M0
+#374 -t2 -s1 "Enable software limit" -s3 "0:not enable,1:enable" -m11 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#375 -t1 -s1 "Soft-limited postion value of X--" -s2 "mm" -m11 -min=-9999.000 -max=9999.000
+#376 -t1 -s1 "Soft-limited postion value of Y--" -s2 "mm" -m11 -min=-9999.000 -max=9999.000
+#377 -t1 -s1 "Soft-limited postion value of Z--" -s2 "mm" -m11 -min=-9999.000 -max=9999.000
+#378 -t1 -s1 "Soft-limited postion value of A--" -s2 "deg" -m11 -min=-9999.000 -max=9999.000
+#379 -t1 -s1 "Soft-limited postion value of X++" -s2 "mm" -m11 -min=-9999.000 -max=9999.000
+#380 -t1 -s1 "Soft-limited postion value of Y++" -s2 "mm" -m11 -min=-9999.000 -max=9999.000
+#381 -t1 -s1 "Soft-limited postion value of Z++" -s2 "mm" -m11 -min=-9999.000 -max=9999.000
+#382 -t1 -s1 "Soft-limited postion value of A++" -s2 "deg" -m11 -min=-9999.000 -max=9999.000
+#390 -t2 -s1 "X axis DIR signal Electric Level" -m2 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#391 -t2 -s1 "Y axis DIR signal Electric Level" -m2 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#392 -t2 -s1 "Z axis DIR signal Electric Level" -m2 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#393 -t2 -s1 "A axis DIR signal Electric Level" -m2 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#395 -t2 -s1 "support of G53 coordinate sys" -s3 "0:support,1:not support" -m0 -min=0.000 -max=1.000 -i0 "Yes" -i1 "No "
+#396 -t0 -s1 "Number of line" -m16 -min=100.000 -max=3600.000
+#400 -t2 -s1 "Limited siganl active of X--" -s3 "0:not enable,1:enable" -m10 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#401 -t2 -s1 "Limited siganl active of Y--" -s3 "0:not enable,1:enable" -m10 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#402 -t2 -s1 "Limited siganl active of Z--" -s3 "0:not enable,1:enable" -m10 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#403 -t2 -s1 "Limited siganl active of A--" -s3 "0:not enable,1:enable" -m10 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#404 -t2 -s1 "Limited siganl active of X++" -s3 "0:not enable,1:enable" -m10 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#405 -t2 -s1 "Limited siganl active of Y++" -s3 "0:not enable,1:enable" -m10 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#406 -t2 -s1 "Limited siganl active of Z++" -s3 "0:not enable,1:enable" -m10 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#407 -t2 -s1 "Limited siganl active of A++" -s3 "0:not enable,1:enable" -m10 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#408 -t2 -s1 "Effective electric level of X--" -m10 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#409 -t2 -s1 "Effective electric level of Y--" -m10 -min=0.000 -max=1.000 -i0 "Low" -i1 "High " 
+#410 -t2 -s1 "Effective electric level of Z--" -m10 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#411 -t2 -s1 "Effective electric level of A--" -m10 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#412 -t2 -s1 "Effective electric level of X++" -m10 -min=0.000 -max=1.000 -i0 "Low" -i1 "High " 
+#413 -t2 -s1 "Effective electric level of Y++" -m10 -min=0.000 -max=1.000 -i0 "Low" -i1 "High " 
+#414 -t2 -s1 "Effective electric level of Z++" -m10 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#415 -t2 -s1 "Effective electric level of A++" -m10 -min=0.000 -max=1.000 -i0 "Low" -i1 "High " 
+#416 -t0 -s1 "Time interval between DIR & pulse" -s2 "ns" -m2 -min=0.000 -max=9999.000
+#418 -t2 -s1 "X axis Pulse signal Electric Level" -m2 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#419 -t2 -s1 "Y axis Pulse signal Electric Level" -m2 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#420 -t2 -s1 "Z axis Pulse signal Electric Level" -m2 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#421 -t2 -s1 "A axis Pulse signal Electric Level" -m2 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#422 -t2 -s1 "definition of PWM Electric level" -m6 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#423 -t2 -s1 "Enable signal of extended ESTOP" -s3 "0:not enable,1:enable" -m13 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable " 
+#424 -t2 -s1 "Electric level of ext-ESTOP signal" -m13 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#425 -t2 -s1 "Enable extended START&PAUSE" -s3 "0:not enable,1:enable" -m13 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "  
+#426 -t2 -s1 "Electric level of extended START" -m0 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#427 -t2 -s1 "Electric level of extended PAUSE" -m0 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#428 -t2 -s1 "Enable the ESTOP signal on MPG" -s3 "0:not enable,1:enable" -m12 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#429 -t2 -s1 "Electric level of ESTOP on MPG" -m12 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#430 -t2 -s1 "MPG interface type" -s3 "0-serial port MPG£¬1-standard MPG" -m12 -min=0.000 -max=1.000 -i0 "Serial" -i1 "Standard "
+#431 -t1 -s1 "MPG Precision " -m12 -min=0.001 -max=0.01
+#432 -t2 -s1 "Standard MPG signal Electric Level" -m12 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#433 -t0 -s1 "PWM rising rate from 0V to 10V" -m6 -min=0.000 -max=65535.000
+#434 -t2 -s1 "A/B phase signal level on MPG" -m12 -min=0.000 -max=1.000 -i0 "Low" -i1 "High "
+#435 -t1 -s1 "X axis protection speed" -s2 "mm/min" -m4 -min=99.000 -max=99999.000
+#436 -t1 -s1 "Y axis protection speed" -s2 "mm/min" -m4 -min=99.000 -max=99999.000
+#437 -t2 -s1 "enable of X axis backlash" -s3 "0:not enable,1:enable" -m14 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#438 -t2 -s1 "enable of Y axis backlash" -s3 "0:not enable,1:enable" -m14 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable " 
+#439 -t2 -s1 "enable of Z axis backlash" -s3 "0:not enable,1:enable" -m14 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#440 -t2 -s1 "enable of A axis backlash" -s3 "0:not enable,1:enable" -m14 -min=0.000 -max=1.000 -i0 "Disable" -i1 "Enable "
+#441 -t1 -s1 "X axis backlash distance" -s2 "mm" -m14 -min=0.000 -max=0.999
+#442 -t1 -s1 "Y axis backlash distance" -s2 "mm" -m14 -min=0.000 -max=0.999
+#443 -t1 -s1 "Z axis backlash distance" -s2 "mm" -m14 -min=0.000 -max=0.999
+#444 -t1 -s1 "A axis backlash distance" -s2 "deg" -m14 -min=0.000 -max=9.999
+#445 -t1 -s1 "Backlash Speed" -s2 "mm/min" -m14 -min=99.000 -max=99999.000
+#446 -t2 -s1 "Define the extended key function" -m13 -min=0.000 -max=1.000 -i0 "START" -i1 "Find Middle "
+#447 -t2 -s1 "Define the Function of Ext-key2" -m13 -min=0.000 -max=1.000 -i0 "PAUSE" -i1 "ZERO "
+#449 -s1 "ZERO "
+#450 -s1 "GOTOZ "
+#451 -s1 "HOME "
+#452 -s1 "PROBE "
+#453 -s1 "AUTO "
+#454 -s1 "SIMULATE "
+#455 -s1 "CONT "
+#456 -s1 "STEP "
+#457 -s1 "MPG "
+#458 -s1 "RESET "
+#459 -s1 "READY "
+#460 -s1 "BUSY "
+#461 -s1 "FRO: "
+#462 -s1 "SRO: "
+#463 -s1 "SJR "
+#464 -s1 "Start Line: "
+#465 -s1 "2ND "
+#466 -s1 "syntax check "
+#467 -s1 "Main Page "
+#468 -s1 "File Page "
+#469 -s1 "Param Page "
+#470 -s1 "Normal Mod "
+#471 -s1 "X-:gotoz Y-:zero Z-:home "
+#472 -s1 "A-:probe Start:goto break "
+#473 -s1 "X-:all gotoz X+:x gotoz "
+#474 -s1 "Y+:y gotoz Z+:z gotoz "
+#475 -s1 "A-:go probe "
+#476 -s1 "X+:left X-:right Y+:up Y-:down "
+#477 -s1 "Z-:enter Z+:cancel "
+#478 -s1 "Y-:all zero X+:x zero "
+#479 -s1 "Y+:y zero Z+:z zero "
+#480 -s1 "Z-:all home X+:x home "
+#481 -s1 "Y+:y home Z+:z home "
+#482 -s1  "soft limit: "
+#483 -s1  "TRCUT "
+#484 -s1  "EDIT "
+#485 -s1  "SBK "
+#495 -t1 -s1 "interpolation period" -s2 "s" -m16 -min=0.002 -max=0.010
+#497 -t1=0.000
+#498 -t0=4.000
+#499 -t1=888888.000 -s1 "user access key" -m16 -min=0.000 -max=999999.000

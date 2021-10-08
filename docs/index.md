@@ -1,10 +1,18 @@
-# Welcome to Omio CNC X6-2200EPL Documentation
+# OmioCNC X6-2200EPL Documentation
 
-documentation for cnc router - OmnioCNC X6-2200EPL
+Documentation for my OmioCNC X6-2200EPL CNC router
 
 --8<-- "./README.md"
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Directory structure
+
+    .
+    ├── datasheets          # data sheets and manuals
+    ├── docs                # toplevel of mkdocs documentation
+    │   ├── checklists      
+    │   ├── design
+    │   ├── firmware
+    │   ├── hardware
+    │   └── images
+    ├── firmware
+    └── gcode               # gcode used

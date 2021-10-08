@@ -1,7 +1,7 @@
 # project information
 site_name: "Omio CNC X6-2200EPL Documentation"
 site_author: "Stephen Eaton"
-site_description: "documentation for cnc router - OmnioCNC X6-2200EPL"
+site_description: "Documentation for OmioCNC X6-2200EPL CNC Router"
 
 # Configuration
 theme:
@@ -18,13 +18,11 @@ nav:
       - checklists/sample2.md
   - Hardware:
       - Overview: hardware/overview.md
-      - Mechanical: hardware/mechanical.md
+      - Cooling: hardware/cooling.md
       - License: license.md
   - Firmware:
       - Overview: firmware/overview.md
       - License: license.md
-  - Bill of Materials:
-      - bom.md
   - Design:
       - design/design.md
   - Authors: authors.md
