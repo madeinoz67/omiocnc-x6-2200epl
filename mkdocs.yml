@@ -33,14 +33,12 @@ nav:
       - Fixture Plate: mods/fixture-plate.md
   - CAM post processors:
       - cam/index.md
-  - G-Code:
+  - G-Code Library:
       - gcode/index.md
-      - Full Warmup: gcode/warmup-full.md
-      - Spindle warmup: gcode/warmup-spindle.md
-      - Commands: gcode/gcode-commands.md
-      - Macros: gcode/gcode-macros.md
-      - Setting: gcode/gcode-settings.md
-      - Troubleshooting: gcode/gcode-troubleshooting.md
+      # - Commands: gcode/gcode-commands.md
+      # - Macros: gcode/gcode-macros.md
+      # - Setting: gcode/gcode-settings.md
+      # - Troubleshooting: gcode/gcode-troubleshooting.md
   - Checklists:
       - checklists/index.md
       - sample: checklists/sample.md
