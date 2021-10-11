@@ -1,8 +1,9 @@
 # G-CODE
 
-## Full warmup - XYZ Axis + spindle
+## Library of handy routines
+### Full warmup - XYZ Axis + spindle
 
-This warms all 3 axis up by moving through their full extends, as well as ramping up the spindle speed.
+This warms all 3 axis up by moving through their full extends on each pass, as well as ramping up the spindle speed.
 
 Can take about 20 minutes to complete.
 
@@ -11,7 +12,7 @@ Can take about 20 minutes to complete.
     macros need to be enabled on the controller. 
     <**TODO** - Controller Parameter to set goes here>
 
-!!! warning 
+!!! warning
 
     Remove any bits from the spindle first
 
@@ -19,7 +20,7 @@ Can take about 20 minutes to complete.
 --8<-- "./gcode/warmup-full.ncc"
 ```
 
-## Quick warmup - Spindle only
+### Quick warmup - Spindle only
 
 Quick and dirty warmup routine for the spindle only.
 
