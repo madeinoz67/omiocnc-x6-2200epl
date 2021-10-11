@@ -31,6 +31,10 @@ nav:
       - Air Mister: mods/air.md
       - Table: mods/table.md
       - Fixture Plate: mods/fixture-plate.md
+  - CAM:
+      - cam/index.md
+      - Fusion 360: cam/f360.md
+      - CamBam: cam/cambam.md
   - G-Code:
       - gcode/index.md
       - Full Warmup: gcode/warmup-full.md
