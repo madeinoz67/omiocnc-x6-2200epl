@@ -2,6 +2,8 @@
 
 Documentation and repository for my OmioCNC X6-2200EPL CNC Router
 
+Online documentation <https://madeinoz67.github.io/omiocnc-x6-2200epl/>
+
 ![Placeholder](./docs/assets/images/omiocnc-x6-2200_pictures_0.jpg)
 
 ## Repository for
