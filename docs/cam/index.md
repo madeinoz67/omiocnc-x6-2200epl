@@ -13,7 +13,7 @@ Ive moved away from using F360 due to the changes in their licensing, however th
 
 ## Copper Cam
 
-[Coppercam](https://www.galaad.net/coppercam-eng.html) is a commercial and very affordable PCB isolation routing program that I use when I make my PCBs
+[Coppercam](https://www.galaad.net/coppercam-eng.html) is a commercial and very affordable PCB isolation routing program that I use when I make my PCBs.  It's much easier to use than [FlatCAM](http://flatcam.org/).
 
 I found the generic post works correctly with no modifications.
 
