@@ -6,7 +6,7 @@ Generic GRBL post processors normally work with some modification around how arc
 
 ## Fusion 360
 
-Ive moved away from using F360 due to the changes in their licensing, however these Ive had good success with these in the past.
+I've since moved away from using F360 due to the changes in their licensing, however I've had good success with these post-processors in the past.
 
 - <https://github.com/MarkHedleyJones/OmioCNC-Postprocessor>
 - <https://brainright.com/wp-content/uploads/2020/10/DDCSV11.txt>
@@ -21,5 +21,4 @@ I found the generic post works correctly with no modifications.
 
 ## EstlCam v11
 
-While I haven't used [Estlcam](https://www.estlcam.de/) much I found the *default* post processor to work just fine with no modifications.
-
+While I haven't used [Estlcam](https://www.estlcam.de/) much, I found the *default* post processor to work just fine with no modifications.
