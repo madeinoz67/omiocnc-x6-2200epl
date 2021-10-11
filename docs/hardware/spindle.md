@@ -10,4 +10,4 @@
 | Amps:   | 8A                 |
 | Collet: | ER20               |
 
-![Placeholder](../assets/images/IMG_0131.png){ align=center, loading=lazy }
+![Placeholder](images/IMG_0131.png){ align=center, loading=lazy }

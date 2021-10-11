@@ -6,10 +6,10 @@ site_description: "Documentation for OmioCNC X6-2200EPL CNC Router"
 # Configuration
 theme:
   name: material
+  favicon: assets/images/favicon.ico
   palette:
     primary: orange
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.indexes
@@ -18,17 +18,32 @@ theme:
 # Page Tree
 nav:
   - Home: index.md
-  - Checklists:
-      - checklists/sample.md
   - Hardware:
-      - Overview: hardware/overview.md
+      - hardware/index.md
+      - Controller: hardware/controller.md
       - Spindle: hardware/spindle.md
-      - Cooling: hardware/cooling.md
-      - Air: hardware/air.md
-      - Table: hardware/table.md
   - Firmware:
-      - Overview: firmware/overview.md
-
+      - firmware/index.md
+  - Modifications & Improvements:
+      - mods/index.md
+      - Spindle Cooling: mods/cooling.md
+      - Simple Chip Shield: mods/shield.md
+      - Air Mister: mods/air.md
+      - Table: mods/table.md
+      - Fixture Plate: mods/fixture-plate.md
+  - G-Code:
+      - gcode/index.md
+      - Full Warmup: gcode/warmup-full.md
+      - Spindle warmup: gcode/warmup-spindle.md
+      - Commands: gcode/gcode-commands.md
+      - Macros: gcode/gcode-macros.md
+      - Setting: gcode/gcode-settings.md
+      - Troubleshooting: gcode/gcode-troubleshooting.md
+  - Checklists:
+      - checklists/index.md
+      - sample: checklists/sample.md
+  - Troubleshooting:
+      - troubleshooting/index.md
   - Authors: authors.md
   - Change Log: changelog.md
   - License: license.md
