@@ -14,7 +14,7 @@ The coolant is general motor coolant rated for alloy and aluminium engines, addi
 [^1]: Algaecide active ingredient is [Diuron](https://apvma.gov.au/node/12511)
 ### Algeacide [^1]
 
-Purchased form local Bunnings hardware store in the ponds section.
+Purchased from the local Bunnings hardware store in the ponds section.
 
 !!! warning
     Dose is 5ml / 300l, so not alot is required
