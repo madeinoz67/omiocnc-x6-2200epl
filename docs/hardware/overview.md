@@ -4,7 +4,7 @@
 
 ## Machining Area
 
-![Placeholder](/assets/images/omiocnc-x6-2200_8.jpg){ align=center }
+![Placeholder](../assets/images/omiocnc-x6-2200_8.jpg){ align=center }
 
 ## Equipment Specifications
 
