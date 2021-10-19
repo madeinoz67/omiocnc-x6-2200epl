@@ -1,4 +1,4 @@
 ---
-title: Getting started
+title: Authors and Contributors
 ---
 --8<-- "./AUTHORS.md"

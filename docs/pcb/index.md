@@ -1,7 +1,7 @@
-# PCB Isolation Milling
+# PCB Isolation Routing
 ## Overview
 
-Most of my work is using 0603
+Most of my work is using 0603 sized discrete components.
 
 ![Placeholder](images/rpi-rgb-board_orig.jpg)
 ![Placeholder](images/20160922-225755-795.png)
@@ -57,7 +57,7 @@ To find the optimal or sweet spot for the feed and speed of a PCB cutter I use t
 <https://www.precisebits.com/tutorials/calibrating_feeds_n_speeds.htm>
 
 
-The attached [gcode](https://github.com/madeinoz67/omiocnc-x6-2200epl/blob/9a9ca2f4a3a47d65ec68a3c9ed30a6ea44f6d38d/gcode/pcb/zigzag_feedrate.gcode)(#zigzag-g-code) runs through a range of feeds and spindle speeds using the zigzag pattern outlined on the above link
+The attached [gcode](#zigzag-g-code) runs through a range of feeds and spindle speeds using the zigzag pattern outlined on the above link
 
 [![Placeholder](images/zigzag.jpg)](https://github.com/madeinoz67/omiocnc-x6-2200epl/blob/9a9ca2f4a3a47d65ec68a3c9ed30a6ea44f6d38d/gcode/pcb/zigzag_feedrate.gcode)
 

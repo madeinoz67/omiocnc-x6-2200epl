@@ -40,7 +40,7 @@ Quick and dirty warmup routine for the spindle only.
 
 ### ZigZag PCB feedrate sweet spot
 
-Zigzag PCB feed and speed sweetspot finder
+Zigzag PCB feed and speed sweetspot finder for [PCB isolation routing](/pcb/#sweet-spot-test-for-feed-and-speed)
 
 ```gcode
 --8<-- "./gcode/pcb/zigzag_feedrate.ncc"
