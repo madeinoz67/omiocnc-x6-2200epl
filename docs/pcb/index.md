@@ -1,4 +1,12 @@
 # PCB Isolation Milling
+## Overview
+
+Most of my work is using 0603
+
+![Placeholder](images/rpi-rgb-board_orig.jpg)
+![Placeholder](images/20160922-225755-795.png)
+![Placeholder](images/20160922-225713-641.png)
+## Calibration
 
 I perform two types of calibrations for PCB isolation routing when using [copper-cam](/cam/#copper-cam) but same can be applied to whatever cam software is being used to mill the PCB.
 
@@ -6,16 +14,20 @@ I perform two types of calibrations for PCB isolation routing when using [copper
 2. [Sweet Spot](#sweet-spot-test-for-feed-and-speed)
 
 This ensures that the values I have within my software are correct physically, as a v-bit width of cut is dependant on the depth of cut.  Additionally the best sweet spot of the cutting speed is determined.
-## Width of Cut Calibration
+### Width of Cut Calibration
 
-I originally found infomration about this calibration here <http://phk.freebsd.dk/CncPcb/calibrate.html> but it was in eagle format, Ive since converted to KiCad and ultimately as a [gerber file](https://github.com/madeinoz67/omiocnc-x6-2200epl/blob/57ab4b1096decab5c5dcaf52e2bb4344f321909a/gcode/pcb/IsolationRouterCalibration.gbr).
+I originally found infomration about this calibration here: <http://phk.freebsd.dk/CncPcb/calibrate.html>, but it was in eagle PCB format, Ive since converted to KiCad and ultimately as a common [gerber file](https://github.com/madeinoz67/omiocnc-x6-2200epl/blob/57ab4b1096decab5c5dcaf52e2bb4344f321909a/gcode/pcb/IsolationRouterCalibration.gbr).
 
 To find the optimal cutting depth for a V-Bit I use gerber file in copper-cam that steps through track sizes 1-25 mil and track spacings of 1-25 mil.
 
-![Placeholder](images/2021-10-19_11-32-21.png)
+[![Placeholder](images/2021-10-19_11-32-21.png)](https://github.com/madeinoz67/omiocnc-x6-2200epl/blob/57ab4b1096decab5c5dcaf52e2bb4344f321909a/gcode/pcb/IsolationRouterCalibration.gbr)
 
 The object is calibrating the width of cut (WOC) for a given bit within the cam software (copper-cam in this case) and the actual cut on PCB, it also gives and indication of the smallest traces and track clearances achievable with the given bit.
-### Example
+
+Basically you put in the settings into coppercam for the cutter and run the this grb, then measure under a microscope the actual width of cut, make diameter adjustments back in the software to compensate, then re-run and hey presto your cuts should be correct widths. Its also a good way to test what the cutter is capable of.
+
+The problem with Vbits are the width of cut can vary due to copper layer variation, how level your machine is and how deep you cut and is why I go for lower angle cutters of 10-30Degrees and shallow cuts.
+#### Example
 
 These two images below are for the WOC or bit width calibration within the Copper-cam, i.e. bits are not normally the size they are suppose to be so the diameter is tweaked in the cutting software, when the upper traces = the lower gaps it means that the size in the software is correct.
 
@@ -34,7 +46,11 @@ These are calibration cuts at different feeds and depth, ones showing is for 0.0
 So with my 20Deg Vbit I'm getting ~0.2mm width of cut
 
 ![Placeholder](images/20160922-230355-217.png)
-## Sweet spot test for Feed and speed
+
+0.4mm width of cut using end mill
+
+![Placeholder](images/20160922-230355-217.png)
+### Sweet spot test for Feed and speed
 
 To find the optimal or sweet spot for the feed and speed of a PCB cutter I use the following process:
 
@@ -43,19 +59,19 @@ To find the optimal or sweet spot for the feed and speed of a PCB cutter I use t
 
 The attached [gcode](https://github.com/madeinoz67/omiocnc-x6-2200epl/blob/9a9ca2f4a3a47d65ec68a3c9ed30a6ea44f6d38d/gcode/pcb/zigzag_feedrate.gcode)(#zigzag-g-code) runs through a range of feeds and spindle speeds using the zigzag pattern outlined on the above link
 
-![Placeholder](images/zigzag.jpg)
+[![Placeholder](images/zigzag.jpg)](https://github.com/madeinoz67/omiocnc-x6-2200epl/blob/9a9ca2f4a3a47d65ec68a3c9ed30a6ea44f6d38d/gcode/pcb/zigzag_feedrate.gcode)
 
-### Example
+#### Example
 
 Bits used are:
 
-* 20 Deg Engraving VBit
+* 20 Deg 0.1mm Engraving VBit
+
+* 0.4mm end mill
 
 * 0.6mm PCB Cutter
 
-* 0.4 end mill
-
-You can see the quality of cuts vary between the types of cutter, so is a trade of using the Vbit for the very fine work which give a ragged cut as opposed to very clean cuts for the end mill and PCB cutter. (the board is easily cleaned up with fine emery board or wet n dry so is not an issue)
+You can see the quality of cuts vary between the types of cutter, so is a trade of using the V-bit for the very fine work which give a ragged cut as opposed to very clean cuts for the end mill and PCB cutter. (the board is easily cleaned up with fine emery board or wet n dry so is not an issue)
 
 ![Placeholder](images/20160923-064932-32.png)
 ![Placeholder](images/20160923-064953-888.png)
@@ -65,7 +81,7 @@ Here you can see zoomed in that the fine tipped V-Bit does not like faster feed 
 ![Placeholder](images/20160922-235540-558.png)
 ![Placeholder](images/20160922-235726-663.png)
 
-### zigzag g-code
+#### zigzag g-code
 
 see [gcode library](/gcode/#zigzag-pcb-feedrate-sweet-spot)
 
@@ -74,6 +90,8 @@ see [gcode library](/gcode/#zigzag-pcb-feedrate-sweet-spot)
 ### Auto levelling
 
 Currently I don't probe the surface of the PCB as the controller wont perform automatic Z-axis compensation like MACH4 or LinuxCNC does (the only downside I found so far of using the standalone controller vs PC controller), this is whats really needed for v-bits to compensate the depth of cut for the irregularities of the copper substrate surface so that the width of cut remains constant.
+
+I currently use a plate of aluminium as my bed thats been recently surfaced to my machine, this works well for me currently.
 
 One workaround to the v-bit issue and not having Z-axis compensation via surface probing is to use a micro mill cutter, this way all WOC are consistent no matter the depth of cut.
 
