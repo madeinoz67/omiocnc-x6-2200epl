@@ -8,7 +8,7 @@ To find the optimal or sweet spot for the feed and speed of a PCB cutter I use t
 
 ## V-Bit Calibration
 
-To find the optimal cutting depth for a V-Bit I use the following [gerber file]() in copper cam
+To find the optimal cutting depth for a V-Bit I use the following [gerber file]() in copper cam that steps through track sizes 1-25 mil and track spacings of 1-25 mil.
 
 ![Placeholder](images/2021-10-19_11-32-21.png)
 
