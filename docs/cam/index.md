@@ -19,7 +19,7 @@ I've since moved away from using F360 due to the changes in their licensing, how
 ![Placeholder](images/2017-09-01_15-03-51.png)
 ![Placeholder](images/2017-09-01_15-05-35.png)
 
-### output
+### Output
 
 I found the generic post works correctly with no modifications.
 
