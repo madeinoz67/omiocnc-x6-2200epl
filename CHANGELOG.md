@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.0.7](https://github.com/madeinoz67/omiocnc-x6-2200epl/tree/v0.0.7) (2021-10-19)
+
 ## [v0.0.6](https://github.com/madeinoz67/omiocnc-x6-2200epl/tree/v0.0.6) (2021-10-11)
 
 ## [v0.0.5](https://github.com/madeinoz67/omiocnc-x6-2200epl/tree/v0.0.5) (2021-10-11)
