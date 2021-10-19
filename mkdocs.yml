@@ -33,6 +33,8 @@ nav:
       - Fixture Plate: mods/fixture-plate.md
   - CAM post processors:
       - cam/index.md
+  - PCB Milling:
+      - pcb/index.md
   - G-Code Library:
       - gcode/index.md
       # - Commands: gcode/gcode-commands.md
