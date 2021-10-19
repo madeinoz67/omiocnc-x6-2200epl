@@ -73,7 +73,7 @@ see [gcode library](/gcode/#zigzag-pcb-feedrate-sweet-spot)
 
 ### Auto levelling
 
-Currently I don't probe the surface of the PCB as the controller wont perform automatic Z-axis compensation like MACH4 or LinuxCNC, this is whats really needed for v-bits to compensate the depth of cut for the irregularities of the copper substrate surface so that the width of cut remains constant.
+Currently I don't probe the surface of the PCB as the controller wont perform automatic Z-axis compensation like MACH4 or LinuxCNC does (the only downside I found so far of using the standalone controller vs PC controller), this is whats really needed for v-bits to compensate the depth of cut for the irregularities of the copper substrate surface so that the width of cut remains constant.
 
 One workaround to the v-bit issue and not having Z-axis compensation via surface probing is to use a micro mill cutter, this way all WOC are consistent no matter the depth of cut.
 
