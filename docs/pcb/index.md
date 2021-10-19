@@ -25,4 +25,3 @@ So with the bit diameter calibrated it is showing me that minimum trace is 1mil 
 ![Placeholder](images/20160922-231707-986.png)
 
 ![Placeholder](images/20160922-231717-153.png)
-
