@@ -60,6 +60,7 @@ edit_uri: ""
 # plugins
 plugins:
   - search
+  - ezlinks
   - mermaid2
 
 extra_javascript:

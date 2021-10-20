@@ -8,7 +8,7 @@ Most of my work is using 0603 sized discrete components.
 ![Placeholder](images/20160922-225713-641.png)
 ## Calibration
 
-I perform two types of calibrations for PCB isolation routing when using [copper-cam](/cam/#copper-cam) but same can be applied to whatever cam software is being used to mill the PCB.
+I perform two types of calibrations for PCB isolation routing when using [copper-cam](cam/#copper-cam) but same can be applied to whatever cam software is being used to mill the PCB.
 
 1. [Width of Cut](#width-of-cut-calibration) 
 2. [Sweet Spot](#sweet-spot-test-for-feed-and-speed)
@@ -16,7 +16,7 @@ I perform two types of calibrations for PCB isolation routing when using [copper
 This ensures that the values I have within my software are correct physically, as a v-bit width of cut is dependant on the depth of cut.  Additionally the best sweet spot of the cutting speed is determined.
 ### Width of Cut Calibration
 
-I originally found infomration about this calibration here: <http://phk.freebsd.dk/CncPcb/calibrate.html>, but it was in eagle PCB format, Ive since converted to KiCad and ultimately as a common [gerber file](https://github.com/madeinoz67/omiocnc-x6-2200epl/blob/57ab4b1096decab5c5dcaf52e2bb4344f321909a/gcode/pcb/IsolationRouterCalibration.gbr).
+I originally found information about this calibration here: <http://phk.freebsd.dk/CncPcb/calibrate.html>, but it was in eagle PCB format, Ive since converted to KiCad and ultimately as a common [gerber file](https://github.com/madeinoz67/omiocnc-x6-2200epl/blob/57ab4b1096decab5c5dcaf52e2bb4344f321909a/gcode/pcb/IsolationRouterCalibration.gbr).
 
 To find the optimal cutting depth for a V-Bit I use gerber file in copper-cam that steps through track sizes 1-25 mil and track spacings of 1-25 mil.
 
@@ -83,7 +83,7 @@ Here you can see zoomed in that the fine tipped V-Bit does not like faster feed 
 
 #### zigzag g-code
 
-see [gcode library](/gcode/#zigzag-pcb-feedrate-sweet-spot)
+see [gcode library](gcode/#zigzag-pcb-feedrate-sweet-spot)
 
 ## Challenges
 

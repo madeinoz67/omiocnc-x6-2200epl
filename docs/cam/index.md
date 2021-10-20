@@ -12,14 +12,14 @@ I've since moved away from using F360 due to the changes in their licensing, how
 - <https://brainright.com/wp-content/uploads/2020/10/DDCSV11.txt>
 
 ## Copper Cam
-[Coppercam](https://www.galaad.net/coppercam-eng.html) is a commercial and very affordable [PCB isolation routing](/pcb) program that I use when I make my PCBs.  It's much easier to use than [FlatCAM](http://flatcam.org/).
+[Coppercam](https://www.galaad.net/coppercam-eng.html) is a commercial and very affordable [PCB isolation routing](pcb) program that I use when I make my PCBs.  I found it's much easier to use than [FlatCAM](http://flatcam.org/).
 ### Tool Library
 
 ![Placeholder](images/2017-09-01_14-34-35.png)
 ![Placeholder](images/2017-09-01_15-03-51.png)
 ![Placeholder](images/2017-09-01_15-05-35.png)
 
-### Output
+### Output Settings
 
 I found the generic post works correctly with no modifications.
 
