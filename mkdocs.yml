@@ -2,6 +2,7 @@
 site_name: "Omio CNC X6-2200EPL Documentation"
 site_author: "Stephen Eaton"
 site_description: "Documentation for OmioCNC X6-2200EPL CNC Router"
+site_url: https://madeinoz67.github.io/omiocnc-x6-2200epl/
 
 # Configuration
 theme:
