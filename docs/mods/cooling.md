@@ -5,7 +5,8 @@
 * Off the shelf components (PC cooling)
 
 ## Diagram
-![Placeholder](images/cooling_loop.png){ align=center }
+
+![placeholder](diagrams/cooling.drawio){ align=center }
 
 ## Coolant
 

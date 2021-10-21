@@ -8,12 +8,12 @@ license = "CC-A-SA"
 [tool.poetry.dependencies]
 python = "^3.9"
 mkdocs-material = "^7.3.2"
-mkdocs-mermaid2-plugin = "^0.5.1"
 mkdocs-macros-plugin = "^0.5.5"
 mkdocs-ezlinks-plugin = "^0.1.12"
 pymdown-extensions = "^9.0"
 mkdocs-material-extensions = "^1.0.3"
 mkdocs-git-revision-date-localized-plugin = "^0.10.0"
+mkdocs-drawio-exporter = "^0.8.0"
 
 [tool.poetry.dev-dependencies]
 
