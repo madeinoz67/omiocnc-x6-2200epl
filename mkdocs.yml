@@ -65,6 +65,9 @@ plugins:
       enable_creation_date: true
       type: iso_date
   - drawio-exporter
+  - thumbnails:
+      # optional styling for the thumbnail:
+      style: margin-top:5px;margin-bottom:5px;margin-right:25px
 
 # extensions
 markdown_extensions:
@@ -91,6 +94,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - markdown.extensions.attr_list
 
 # Copyright
 copyright: Copyright &copy; 2021 Stephen Eaton

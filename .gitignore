@@ -54,3 +54,4 @@ Temporary Items
 site/
 
 #TODO: Add CPP / Arduino ignores
+http_cache.sqlite
