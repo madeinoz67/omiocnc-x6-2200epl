@@ -12,7 +12,7 @@ theme:
     primary: orange
   features:
     - navigation.sections
-    - navigation.expand
+    #- navigation.expand
     - navigation.indexes
     - navigation.top
 
@@ -65,23 +65,26 @@ plugins:
       enable_creation_date: true
       type: iso_date
   - drawio-exporter
-  - thumbnails:
-      # optional styling for the thumbnail:
-      style: margin-top:5px;margin-bottom:5px;margin-right:25px
 
 # extensions
 markdown_extensions:
   - abbr
   - attr_list
+  - md_in_html
+  - def_list
   - admonition
   - footnotes
   - meta
   - pymdownx.details
   - pymdownx.snippets
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
   - pymdownx.smartsymbols
   - pymdownx.caret
   - pymdownx.mark
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tilde
   - toc:
       permalink: true
@@ -94,7 +97,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - markdown.extensions.attr_list
 
 # Copyright
 copyright: Copyright &copy; 2021 Stephen Eaton

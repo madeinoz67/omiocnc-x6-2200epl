@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "omiocnc-x6-2200epl"
-version = "0.0.1"
+version = "0.0.11"
 description = "documentation for cnc router - OmnioCNC X6-2200EPL"
 authors = ["Stephen Eaton"]
 license = "CC-A-SA"
@@ -14,7 +14,6 @@ pymdown-extensions = "^9.0"
 mkdocs-material-extensions = "^1.0.3"
 mkdocs-git-revision-date-localized-plugin = "^0.10.0"
 mkdocs-drawio-exporter = "^0.8.0"
-mkdocs-thumbnails = "^0.0.9"
 
 [tool.poetry.dev-dependencies]
 
