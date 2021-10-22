@@ -29,7 +29,7 @@ Basically you put in the settings into coppercam for the cutter and run the this
 The problem with Vbits are the width of cut can vary due to copper layer variation, how level your machine is and how deep you cut and is why I go for lower angle cutters of 10-30Degrees and shallow cuts.
 #### Example
 
-These two images below are for the WOC or bit width calibration within the Copper-cam, i.e. bits are not normally the size they are suppose to be so the diameter is tweaked in the cutting software, when the upper traces = the lower gaps it means that the size in the software is correct.
+These two images below are for the WOC or bit width calibration within the Copper-cam, i.e. bits are not normally the size they are suppose to be so the diameter is tweaked in the cutting software, when the upper traces = the lower gaps it means that the bit size in the software is set correctly.
 
 Smallest track size on Left of screen is 1mil (1 thousand of inch) also I don't yet have my step-over dialled in and hence why I have some copper artefacts left because of the difference between the advertised cutter size VS calibrated cutter size.
 
@@ -45,11 +45,15 @@ These are calibration cuts at different feeds and depth, ones showing is for 0.0
 
 So with my 20Deg Vbit I'm getting ~0.2mm width of cut
 
-![Placeholder](images/20160922-230355-217.png)
+![Placeholder](images/20160922-225952-522.png)
 
 0.4mm width of cut using end mill
 
 ![Placeholder](images/20160922-230355-217.png)
+
+0.6mm width of cut using PCB Burr Cutter
+
+![Placeholder](images/20160922-230251-986.png)
 ### Sweet spot test for Feed and speed
 
 To find the optimal or sweet spot for the feed and speed of a PCB cutter I use the following process:
@@ -69,7 +73,7 @@ Bits used are:
 
 * 0.4mm end mill
 
-* 0.6mm PCB Cutter
+* 0.6mm PCB Burr Cutter
 
 You can see the quality of cuts vary between the types of cutter, so is a trade of using the V-bit for the very fine work which give a ragged cut as opposed to very clean cuts for the end mill and PCB cutter. (the board is easily cleaned up with fine emery board or wet n dry so is not an issue)
 
