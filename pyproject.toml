@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "omiocnc-x6-2200epl"
-version = "0.0.11"
+version = "0.0.12"
 description = "documentation for cnc router - OmnioCNC X6-2200EPL"
 authors = ["Stephen Eaton"]
 license = "CC-A-SA"
