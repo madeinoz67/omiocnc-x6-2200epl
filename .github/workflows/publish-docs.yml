@@ -7,6 +7,9 @@ on:
 env:
   PYTHON_VERSION: 3.9.x
   POETRY_VERSION: 1.1.11
+  drawio-version: 14.5.1
+  drawio-arch: amd64
+  drawio-sha256sum: 0cabdf1e9a051fc38672a9233b1b2d5368d2a776fe3d3f5e09a823278b899976
 
 jobs:
   documentation:
@@ -16,14 +19,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: install snapd
-        run:  apt install snapd
-
-      - name: install drawio
-        run:  snap install drawio
+      - name: Install Draw.io Desktop (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          set -euo pipefail
+          drawio_deb="drawio-${{ env.drawio-arch }}-${{ env.drawio-version }}.deb"
+          drawio_url="https://github.com/jgraph/drawio-desktop/releases/download/v${{ env.drawio-version }}/drawio-${{ env.drawio-arch }}-${{ env.drawio-version }}.deb"
+          curl -L -o "$drawio_deb" "$drawio_url"
+          sha256sum --check <<<"${{ env.drawio-sha256sum }}  $drawio_deb"
+          sudo apt-get install -y libasound2 xvfb ./"$drawio_deb"
 
       - name: Set up Python runtime
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
