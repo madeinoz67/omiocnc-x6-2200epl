@@ -6,7 +6,7 @@ on:
       - completed
 env:
   PYTHON_VERSION: 3.9.x
-  POETRY_VERSION: 1.1.7
+  POETRY_VERSION: 1.1.11
 
 jobs:
   documentation:
@@ -15,6 +15,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: install snapd
+        run:  apt install snapd
+
+      - name: install drawio
+        run:  snap install drawio
 
       - name: Set up Python runtime
         uses: actions/setup-python@v1
