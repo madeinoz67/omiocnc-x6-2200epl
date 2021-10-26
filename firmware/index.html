@@ -1,0 +1,1221 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for OmioCNC X6-2200EPL CNC Router">
+      
+      
+      
+        <meta name="author" content="Stephen Eaton">
+      
+      
+        <link rel="canonical" href="https://madeinoz67.github.io/omiocnc-x6-2200epl/firmware/">
+      
+      <link rel="icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
+    
+    
+      
+        <title>Firmware - Omio CNC X6-2200EPL Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.db9e7362.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffa724">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="orange" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#firmware" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Omio CNC X6-2200EPL Documentation" class="md-header__button md-logo" aria-label="Omio CNC X6-2200EPL Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Omio CNC X6-2200EPL Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Firmware
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/madeinoz67/omiocnc-x6-2200epl" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    madeinoz67/omiocnc-x6-2200epl
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Omio CNC X6-2200EPL Documentation" class="md-nav__button md-logo" aria-label="Omio CNC X6-2200EPL Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Omio CNC X6-2200EPL Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/madeinoz67/omiocnc-x6-2200epl" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    madeinoz67/omiocnc-x6-2200epl
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../hardware/">Hardware</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Hardware" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Hardware
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/controller/" class="md-nav__link">
+        Controller
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/spindle/" class="md-nav__link">
+        Spindle
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Firmware</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Firmware" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Firmware
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../mods/">Modifications & Improvements</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Modifications & Improvements" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Modifications & Improvements
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mods/cooling/" class="md-nav__link">
+        Spindle Cooling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mods/shield/" class="md-nav__link">
+        Simple Chip Shield
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mods/air/" class="md-nav__link">
+        Air Mister
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mods/table/" class="md-nav__link">
+        Table
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mods/fixture-plate/" class="md-nav__link">
+        Fixture Plate
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../cam/">CAM post processors</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="CAM post processors" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          CAM post processors
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../pcb/">PCB Milling</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="PCB Milling" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          PCB Milling
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../gcode/">G-Code Library</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="G-Code Library" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          G-Code Library
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../checklists/">Checklists</a>
+          
+            <label for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Checklists" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Checklists
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checklists/sample/" class="md-nav__link">
+        sample
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../troubleshooting/">Troubleshooting</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Troubleshooting" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Troubleshooting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authors/" class="md-nav__link">
+        Authors
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        Change Log
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/" class="md-nav__link">
+        References
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ddcs-parameters" class="md-nav__link">
+    DDCS Parameters
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Permanent link">&para;</a></h1>
+<h2 id="ddcs-parameters">DDCS Parameters<a class="headerlink" href="#ddcs-parameters" title="Permanent link">&para;</a></h2>
+<p>List of available parameters in the controller.  See manual for full descriptions.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This list does not represent the current settings of any particular machine, they are factory defaults.</p>
+</div>
+<div class="highlight"><pre><span></span><code>#1   -t2 -s1 &quot;language setting&quot; -s3  &quot;0:eng,1:chs&quot; -m16 -min=0.000 -max=1.000 -i0 &quot;Eng&quot; -i1 &quot;ÖÐÎÄ&quot;
+#2   -t1 -s1 &quot;Display response during working&quot; -m16 -min=400 -max=10000
+#3   -t2 -s1 &quot;Function of tool path key&quot; -m0 -min=0.000 -max=1.000 -i0  &quot;tool path&quot; -i1  &quot;Try cutting &quot;
+#5   -t1 -s1 &quot;minimum log radius of 4axis machining&quot; -s2 &quot;mm&quot; -m1  -min=3.000 -max=999.999
+#6   -t2 -s1 &quot;A axis rotate reference axis&quot; -m1 -min=0.000 -max=3.000 -i0 &quot;X axis&quot; -i1 &quot;Y axis&quot; -i2 &quot;Z axis&quot;-i3 &quot;not rotate&quot;
+#8   =1.000
+#9   =1.000
+#12  =1.000
+#13  =1.000
+#14  =1.000
+#15  -t2 -s1 &quot;Speed Selection&quot; -s3 &quot;0:set by G code,1:use default speed&quot; -m4 -min=0.000 -max=1.000 -i0 &quot;G code&quot;-i1 &quot;default&quot;
+#16  -t2 -s1 &quot;current coordinate system&quot; -s3 &quot;0:G53,1:G54,2:G55,3:G56,4:G57,5:G58,6:G59,7:MACH&quot;-m5 -min=1.000 -max=7.000 -i0 &quot;G53&quot;-i1 &quot;G54&quot; -i2 &quot;G55&quot; -i3 &quot;G56&quot; -i4 &quot;G57&quot; -i5 &quot;G58&quot; -i6 &quot;G59&quot; -i7 &quot;MACH &quot;
+#18  -t1=200.0
+#19  -t1=200.0
+#20  -t1=3.0
+#33  -t1 -s1 &quot;Motor start speed&quot; -s2 &quot;mm/min&quot; -m2 -min=0.000 -max=999.000
+#34  -t1 -s1 &quot;X axis pulse equivalency&quot; -s2 &quot;pulse/mm&quot; -m2 -min=50.000 -max=99999.000
+#35  -t1 -s1 &quot;Y axis pulse equivalency&quot; -s2 &quot;pulse/mm&quot; -m2 -min=50.000 -max=99999.000
+#36  -t1 -s1 &quot;Z axis pulse equivalency&quot; -s2 &quot;pulse/mm&quot; -m2 -min=50.000 -max=99999.000
+#37  -m0
+#38  -t1 -s1 &quot;A axis pulse equivalency&quot; -s2 &quot;&quot; -m2 -min=50.000 -max=999999.000
+#39  -t2 -s1 &quot;A axis pulse unit&quot; -m2 -min=0.000 -max=1.000 -i0 &quot;pulse/deg&quot; -i1 &quot;pulse/circle &quot;
+#40  -t2 -s1 &quot;AB axis Selection&quot; -m2 -min=0.000 -max=1.000 -i0 &quot;A axis&quot; -i1 &quot;B axis &quot;
+#41  -t1 -s1 &quot;X Axis max speed in M_Ctrl mode&quot; -s2 &quot;mm/min&quot; -m3 -min=99.000 -max=99999.000 
+#42  -t1 -s1 &quot;Y Axis max speed in M_Ctrl mode&quot; -s2 &quot;mm/min&quot; -m3 -min=99.000 -max=99999.000 
+#43  -t1 -s1 &quot;Z Axis max speed in M_Ctrl mode&quot; -s2 &quot;mm/min&quot; -m3 -min=99.000 -max=99999.000 
+#44  -t1 -s1 &quot;A Axis max speed in M_Ctrl mode&quot; -s2 &quot;deg/min&quot; -m3 -min=99.000 -max=99999.000
+#45  -t1 -s1 &quot;X axis start Acc in M_Ctrl mode&quot; -s2 &quot;mm/s2&quot; -m3 -min=9.000 -max=9999.000
+#46  -t1 -s1 &quot;Y axis start Acc in M_Ctrl mode&quot; -s2 &quot;mm/s2&quot; -m3 -min=9.000 -max=9999.000
+#47  -t1 -s1 &quot;Z axis start Acc in M_Ctrl mode&quot; -s2 &quot;mm/s2&quot; -m3 -min=9.000 -max=9999.000
+#48  -t1 -s1 &quot;A axis start Acc in M_Ctrl mode&quot; -s2 &quot;deg/s2&quot; -m3 -min=9.000 -max=9999.000
+#49  -t0 -s1 &quot;HOME times&quot; -m8 -min=1.000 -max=5.000            
+#50  -t2 -s1 &quot;HOME signal Effective when HOME&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Ignore HOME&quot; -i1 &quot;Continue HOME &quot;
+#51  -t2 -s1 &quot;Enable limit signal when HOME&quot; -s3 &quot;0:Disable,1:Enable&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#52  -t2 -s1 &quot;Enable X Home Searching function&quot; -s3 &quot;0:not enable,1:enable&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#53  -t2 -s1 &quot;Enable Y Home Searching function&quot; -s3 &quot;0:not enable,1:enable&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#54  -t2 -s1 &quot;Enable Z Home Searching function&quot; -s3 &quot;0:not enable,1:enable&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#55  -t2 -s1 &quot;Enable Z Home Searching function&quot; -s3 &quot;0:not enable,1:enable&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#56  -t1 -s1 &quot;X axis Home speed&quot; -s2 &quot;mm/min&quot; -m8 -min=99.000 -max=99999.000
+#57  -t1 -s1 &quot;Y axis Home speed&quot; -s2 &quot;mm/min&quot; -m8 -min=99.000 -max=99999.000
+#58  -t1 -s1 &quot;Z axis Home speed&quot; -s2 &quot;mm/min&quot; -m8 -min=99.000 -max=99999.000
+#59  -t1 -s1 &quot;A axis Home speed&quot; -s2 &quot;deg/min&quot; -m8 -min=99.000 -max=99999.000
+#60  -t2 -s1 &quot;X axis Home signal Electric Level&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#61  -t2 -s1 &quot;Y axis Home signal Electric Level&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#62  -t2 -s1 &quot;Z axis Home signal Electric Level&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#63  -t2 -s1 &quot;A axis Home signal Electric Level&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#64  -t2 -s1 &quot;X axis Home direction&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Negative&quot; -i1 &quot;Positive &quot;
+#65  -t2 -s1 &quot;Y axis Home direction&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Negative&quot; -i1 &quot;Positive &quot;
+#66  -t2 -s1 &quot;Z axis Home direction&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Negative&quot; -i1 &quot;Positive &quot;
+#67  -t2 -s1 &quot;A axis Home direction&quot; -m8 -min=0.000 -max=1.000 -i0 &quot;Negative&quot; -i1 &quot;Positive &quot;
+#68  -t2 -s1 &quot;Tool Setting function mode &quot; -m9 -min=0.000 -max=2.000 -i0 &quot;Disable&quot; -i1 &quot;mode 1&quot; -i2 &quot;mode 2 &quot;
+#69  -t1 -s1 &quot;Thickness of tool sensor&quot; -s2 &quot;mm&quot; -m9 -min=-99.000 -max=99.000
+#70  -t2 -s1 &quot;Probe signal electric level&quot; -m9 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#71  -t2 -s1 &quot;Initial tool&#39;s position&quot; -m9 -min=0.000 -max=1.000 -i0 &quot;current position&quot; -i1 &quot;fixed position &quot;
+#72  -t1 -s1 &quot;Initial probe position on X axis&quot; -s2 &quot;mm&quot; -m9 -min=-9999.000 -max=9999.000
+#73  -t1 -s1 &quot;Initial probe position on Y axis&quot; -s2 &quot;mm&quot; -m9 -min=-9999.000 -max=9999.000
+#74  -t1 -s1 &quot;Initial probe position on Z axis&quot; -s2 &quot;mm&quot; -m9 -min=-9999.000 -max=9999.000
+#75  -t1 -s1 &quot;back distance after probe&quot; -s2 &quot;mm&quot; -m9 -min=0.000 -max=99.000
+#76  -t1 -s1 &quot;default operation speed&quot; -s2 &quot;mm/min&quot; -m4 -min=10.000 -max=99999.000
+#77  -t1 -s1 &quot;maximum speed&quot; -s2 &quot;mm/min&quot; -m4 -min=99.000 -max=99999.000
+#78  -t1 -s1 &quot;Z axis lifting protection speed&quot; -s2 &quot;mm/min&quot; -m4 -min=99.000 -max=99999.000
+#79  -t1 -s1 &quot;Z axis dropping protection speed&quot; -m4 -min=99.000 -max=99999.000
+#80  -t1 -s1 &quot;G0 Speed&quot; -s2 &quot;mm/min&quot; -m4 -min=99.000 -max=99999.000
+#82  -t1 -s1 &quot;Z axis safe height&quot; -s2 &quot;mm&quot; -m4 -min=0.000 -max=99.000
+#83  -t1 -s1 &quot;X axis back distance after Home&quot; -s2 &quot;mm&quot; -m8 -min=0.000 -max=99.000
+#84  -t1 -s1 &quot;Y axis back distance after Home&quot; -s2 &quot;mm&quot; -m8 -min=0.000 -max=99.000
+#85  -t1 -s1 &quot;Z axis back distance after Home&quot; -s2 &quot;mm&quot; -m8 -min=0.000 -max=99.000
+#86  -t1 -s1 &quot;A axis back distance after Home&quot; -s2 &quot;deg&quot; -m8 -min=0.000 -max=360.000
+#88  -t2 -s1 &quot;enable of beep &quot; -m16 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#89  -t1 -s1 &quot;Z axis back distance when pause&quot; -s2 &quot;mm&quot; -m4 -min=0.000 -max=99.000
+#98  -t1 -s1 &quot;maximum spindle speed&quot; -s2 &quot;rpm&quot; -m6 -min=99.000 -max=99999.000
+#99  -t1 -s1 &quot;operation acceleration&quot; -s2 &quot;mm/s2&quot; -m4 -min=9.000 -max=9999.000
+#100 -t1 -s1 &quot;X axis manual control speed&quot; -s2 &quot;mm/min&quot; -m3 -min=99.000 -max=99999.000
+#101 -t1 -s1 &quot;Y axis manual control speed&quot; -s2 &quot;mm/min&quot; -m3 -min=99.000 -max=99999.000
+#102 -t1 -s1 &quot;Z axis manual control speed&quot; -s2 &quot;mm/min&quot; -m3 -min=99.000 -max=99999.000
+#103 -t1 -s1 &quot;A axis manual control speed&quot; -s2 &quot;deg/min&quot; -m3 -min=99.000 -max=99999.000
+#104 -t2 -s1 &quot;A axis optimal path when G0 run&quot; -m1 -min=0.000 -max=1.000 -i0 &quot;No&quot; -i1 &quot;Yes &quot;
+#108 -t2 -s1  &quot;M Bus IO command response&quot; -s3 &quot;0:not response,1:response&quot; -m7 -min=0.000 -max=1.000 -i0 &quot;No&quot; -i1 &quot;Yes &quot;
+#109 -t0 -s1  &quot;M Bus IO default status&quot; -m7 -min=0 -max=4294967295
+#192 -t1=100.0
+#193 -t1=100.0
+#194 -t1=3.0
+#195 =0
+#196 =0
+#218 -t2 -s1 &quot;Cycle Start key mode selection&quot; -m16 -min=0.000 -max=1.000 -i0 &quot;Pause start&quot; -i1 &quot;Restart &quot;
+#219 -t2 -s1 &quot;If Stop Spindle when pause&quot; -m6 -min=0.000 -max=1.000 -i0 &quot;No&quot; -i1 &quot;Yes &quot;
+#220 -t2 -s1 &quot;Spindle speed selection&quot; -s3 &quot;0:set by G code,1:default speed of spindle&quot; -m6 -min=0.000 -max=1.000 -i0 &quot;G code&quot; -i1 &quot;default &quot;
+#221 -t1 -s1 &quot;default spindle speed&quot; -s2 &quot;rpm&quot; -m6 -min=10.000 -max=99999.000
+#222 -t2 -s1 &quot;Spindle commands M3/M5 response&quot; -s3 &quot;0:not response,1:response&quot; -m6 -min=0.000 -max=1.000 -i0 &quot;No&quot; -i1 &quot;Yes &quot;
+#223 -t2 -s1 &quot;response of M code(M8/M9,M10/M11)&quot; -s3 &quot;0:not response,1:response&quot; -m7 -min=0.000 -max=1.000 -i0 &quot;No&quot; -i1 &quot;Yes &quot;
+#224 -t1 -s1 &quot;Spindle M3/M4/M5 response Duration&quot; -s2 &quot;s&quot; -m6 -min=0.000 -max=9.000
+#225 -t1 -s1 &quot;delay time of M8/M9&quot; -s2 &quot;s&quot; -m7 -min=0.000 -max=9.000
+#226 -t1 -s1 &quot;delay time of M10/M11&quot; -s2 &quot;s&quot; -m7 -min=0.000 -max=9.000
+#227 -t2 -s1 &quot;Spindle switch Active level&quot; -m6 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#228 -t2 -s1 &quot;M8/M9 active electric level&quot; -m7 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#229 -t2 -s1 &quot;M10/M11 active electric level&quot; -m7 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#250 -t2 -s1 &quot;real track paint enable&quot; -m16 -min=0.000 -max=1.000 -i0 &quot;disable&quot; -i1 &quot;enable &quot;
+#253 -t2 -s1 &quot;track paint mode&quot; -m16 -min=0.000 -max=1.000 -i0 &quot;Statue Mode&quot; -i1 &quot;Line Mode &quot;
+#263 -t1 -s1 &quot;X axis stop Acc in M_Ctrl mode&quot; -s2 &quot;mm/s2&quot; -m3 -min=9.000 -max=9999.000
+#264 -t1 -s1 &quot;Y axis stop Acc in M_Ctrl mode&quot; -s2 &quot;mm/s2&quot; -m3 -min=9.000 -max=9999.000
+#265 -t1 -s1 &quot;Z axis stop Acc in M_Ctrl mode&quot; -s2 &quot;mm/s2&quot; -m3 -min=9.000 -max=9999.000
+#266 -t1 -s1 &quot;A axis stop Acc in M_Ctrl mode&quot; -s2 &quot;deg/s2&quot; -m3 -min=9.000 -max=9999.000
+#267 -t1 -s1 &quot;H00 tool offset&quot; -s2 &quot;mm&quot; -m0 -min=-999.999 -max=999.999
+#268 -t1 -s1 &quot;H01 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#269 -t1 -s1 &quot;H02 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#270 -t1 -s1 &quot;H03 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#271 -t1 -s1 &quot;H04 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#272 -t1 -s1 &quot;H05 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#273 -t1 -s1 &quot;H06 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#274 -t1 -s1 &quot;H07 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#275 -t1 -s1 &quot;H08 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#276 -t1 -s1 &quot;H09 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#277 -t1 -s1 &quot;H10 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#278 -t1 -s1 &quot;H11 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#279 -t1 -s1 &quot;H12 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#280 -t1 -s1 &quot;H13 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#281 -t1 -s1 &quot;H14 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#282 -t1 -s1 &quot;H15 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#283 -t1 -s1 &quot;D00 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#284 -t1 -s1 &quot;D01 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#285 -t1 -s1 &quot;D02 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#286 -t1 -s1 &quot;D03 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#287 -t1 -s1 &quot;D04 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#288 -t1 -s1 &quot;D05 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#289 -t1 -s1 &quot;D06 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#290 -t1 -s1 &quot;D07 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#291 -t1 -s1 &quot;D08 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#292 -t1 -s1 &quot;D09 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#293 -t1 -s1 &quot;D10 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#294 -t1 -s1 &quot;D11 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#295 -t1 -s1 &quot;D12 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#296 -t1 -s1 &quot;D13 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#297 -t1 -s1 &quot;D14 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#298 -t1 -s1 &quot;D15 tool offset&quot; -s2 &quot;mm&quot; -m15 -min=-999.999 -max=999.999
+#299 -M0
+#374 -t2 -s1 &quot;Enable software limit&quot; -s3 &quot;0:not enable,1:enable&quot; -m11 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#375 -t1 -s1 &quot;Soft-limited postion value of X--&quot; -s2 &quot;mm&quot; -m11 -min=-9999.000 -max=9999.000
+#376 -t1 -s1 &quot;Soft-limited postion value of Y--&quot; -s2 &quot;mm&quot; -m11 -min=-9999.000 -max=9999.000
+#377 -t1 -s1 &quot;Soft-limited postion value of Z--&quot; -s2 &quot;mm&quot; -m11 -min=-9999.000 -max=9999.000
+#378 -t1 -s1 &quot;Soft-limited postion value of A--&quot; -s2 &quot;deg&quot; -m11 -min=-9999.000 -max=9999.000
+#379 -t1 -s1 &quot;Soft-limited postion value of X++&quot; -s2 &quot;mm&quot; -m11 -min=-9999.000 -max=9999.000
+#380 -t1 -s1 &quot;Soft-limited postion value of Y++&quot; -s2 &quot;mm&quot; -m11 -min=-9999.000 -max=9999.000
+#381 -t1 -s1 &quot;Soft-limited postion value of Z++&quot; -s2 &quot;mm&quot; -m11 -min=-9999.000 -max=9999.000
+#382 -t1 -s1 &quot;Soft-limited postion value of A++&quot; -s2 &quot;deg&quot; -m11 -min=-9999.000 -max=9999.000
+#390 -t2 -s1 &quot;X axis DIR signal Electric Level&quot; -m2 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#391 -t2 -s1 &quot;Y axis DIR signal Electric Level&quot; -m2 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#392 -t2 -s1 &quot;Z axis DIR signal Electric Level&quot; -m2 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#393 -t2 -s1 &quot;A axis DIR signal Electric Level&quot; -m2 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#395 -t2 -s1 &quot;support of G53 coordinate sys&quot; -s3 &quot;0:support,1:not support&quot; -m0 -min=0.000 -max=1.000 -i0 &quot;Yes&quot; -i1 &quot;No &quot;
+#396 -t0 -s1 &quot;Number of line&quot; -m16 -min=100.000 -max=3600.000
+#400 -t2 -s1 &quot;Limited siganl active of X--&quot; -s3 &quot;0:not enable,1:enable&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#401 -t2 -s1 &quot;Limited siganl active of Y--&quot; -s3 &quot;0:not enable,1:enable&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#402 -t2 -s1 &quot;Limited siganl active of Z--&quot; -s3 &quot;0:not enable,1:enable&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#403 -t2 -s1 &quot;Limited siganl active of A--&quot; -s3 &quot;0:not enable,1:enable&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#404 -t2 -s1 &quot;Limited siganl active of X++&quot; -s3 &quot;0:not enable,1:enable&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#405 -t2 -s1 &quot;Limited siganl active of Y++&quot; -s3 &quot;0:not enable,1:enable&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#406 -t2 -s1 &quot;Limited siganl active of Z++&quot; -s3 &quot;0:not enable,1:enable&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#407 -t2 -s1 &quot;Limited siganl active of A++&quot; -s3 &quot;0:not enable,1:enable&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#408 -t2 -s1 &quot;Effective electric level of X--&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#409 -t2 -s1 &quot;Effective electric level of Y--&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot; 
+#410 -t2 -s1 &quot;Effective electric level of Z--&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#411 -t2 -s1 &quot;Effective electric level of A--&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#412 -t2 -s1 &quot;Effective electric level of X++&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot; 
+#413 -t2 -s1 &quot;Effective electric level of Y++&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot; 
+#414 -t2 -s1 &quot;Effective electric level of Z++&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#415 -t2 -s1 &quot;Effective electric level of A++&quot; -m10 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot; 
+#416 -t0 -s1 &quot;Time interval between DIR &amp; pulse&quot; -s2 &quot;ns&quot; -m2 -min=0.000 -max=9999.000
+#418 -t2 -s1 &quot;X axis Pulse signal Electric Level&quot; -m2 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#419 -t2 -s1 &quot;Y axis Pulse signal Electric Level&quot; -m2 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#420 -t2 -s1 &quot;Z axis Pulse signal Electric Level&quot; -m2 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#421 -t2 -s1 &quot;A axis Pulse signal Electric Level&quot; -m2 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#422 -t2 -s1 &quot;definition of PWM Electric level&quot; -m6 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#423 -t2 -s1 &quot;Enable signal of extended ESTOP&quot; -s3 &quot;0:not enable,1:enable&quot; -m13 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot; 
+#424 -t2 -s1 &quot;Electric level of ext-ESTOP signal&quot; -m13 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#425 -t2 -s1 &quot;Enable extended START&amp;PAUSE&quot; -s3 &quot;0:not enable,1:enable&quot; -m13 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;  
+#426 -t2 -s1 &quot;Electric level of extended START&quot; -m0 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#427 -t2 -s1 &quot;Electric level of extended PAUSE&quot; -m0 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#428 -t2 -s1 &quot;Enable the ESTOP signal on MPG&quot; -s3 &quot;0:not enable,1:enable&quot; -m12 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#429 -t2 -s1 &quot;Electric level of ESTOP on MPG&quot; -m12 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#430 -t2 -s1 &quot;MPG interface type&quot; -s3 &quot;0-serial port MPG£¬1-standard MPG&quot; -m12 -min=0.000 -max=1.000 -i0 &quot;Serial&quot; -i1 &quot;Standard &quot;
+#431 -t1 -s1 &quot;MPG Precision &quot; -m12 -min=0.001 -max=0.01
+#432 -t2 -s1 &quot;Standard MPG signal Electric Level&quot; -m12 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#433 -t0 -s1 &quot;PWM rising rate from 0V to 10V&quot; -m6 -min=0.000 -max=65535.000
+#434 -t2 -s1 &quot;A/B phase signal level on MPG&quot; -m12 -min=0.000 -max=1.000 -i0 &quot;Low&quot; -i1 &quot;High &quot;
+#435 -t1 -s1 &quot;X axis protection speed&quot; -s2 &quot;mm/min&quot; -m4 -min=99.000 -max=99999.000
+#436 -t1 -s1 &quot;Y axis protection speed&quot; -s2 &quot;mm/min&quot; -m4 -min=99.000 -max=99999.000
+#437 -t2 -s1 &quot;enable of X axis backlash&quot; -s3 &quot;0:not enable,1:enable&quot; -m14 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#438 -t2 -s1 &quot;enable of Y axis backlash&quot; -s3 &quot;0:not enable,1:enable&quot; -m14 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot; 
+#439 -t2 -s1 &quot;enable of Z axis backlash&quot; -s3 &quot;0:not enable,1:enable&quot; -m14 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#440 -t2 -s1 &quot;enable of A axis backlash&quot; -s3 &quot;0:not enable,1:enable&quot; -m14 -min=0.000 -max=1.000 -i0 &quot;Disable&quot; -i1 &quot;Enable &quot;
+#441 -t1 -s1 &quot;X axis backlash distance&quot; -s2 &quot;mm&quot; -m14 -min=0.000 -max=0.999
+#442 -t1 -s1 &quot;Y axis backlash distance&quot; -s2 &quot;mm&quot; -m14 -min=0.000 -max=0.999
+#443 -t1 -s1 &quot;Z axis backlash distance&quot; -s2 &quot;mm&quot; -m14 -min=0.000 -max=0.999
+#444 -t1 -s1 &quot;A axis backlash distance&quot; -s2 &quot;deg&quot; -m14 -min=0.000 -max=9.999
+#445 -t1 -s1 &quot;Backlash Speed&quot; -s2 &quot;mm/min&quot; -m14 -min=99.000 -max=99999.000
+#446 -t2 -s1 &quot;Define the extended key function&quot; -m13 -min=0.000 -max=1.000 -i0 &quot;START&quot; -i1 &quot;Find Middle &quot;
+#447 -t2 -s1 &quot;Define the Function of Ext-key2&quot; -m13 -min=0.000 -max=1.000 -i0 &quot;PAUSE&quot; -i1 &quot;ZERO &quot;
+#449 -s1 &quot;ZERO &quot;
+#450 -s1 &quot;GOTOZ &quot;
+#451 -s1 &quot;HOME &quot;
+#452 -s1 &quot;PROBE &quot;
+#453 -s1 &quot;AUTO &quot;
+#454 -s1 &quot;SIMULATE &quot;
+#455 -s1 &quot;CONT &quot;
+#456 -s1 &quot;STEP &quot;
+#457 -s1 &quot;MPG &quot;
+#458 -s1 &quot;RESET &quot;
+#459 -s1 &quot;READY &quot;
+#460 -s1 &quot;BUSY &quot;
+#461 -s1 &quot;FRO: &quot;
+#462 -s1 &quot;SRO: &quot;
+#463 -s1 &quot;SJR &quot;
+#464 -s1 &quot;Start Line: &quot;
+#465 -s1 &quot;2ND &quot;
+#466 -s1 &quot;syntax check &quot;
+#467 -s1 &quot;Main Page &quot;
+#468 -s1 &quot;File Page &quot;
+#469 -s1 &quot;Param Page &quot;
+#470 -s1 &quot;Normal Mod &quot;
+#471 -s1 &quot;X-:gotoz Y-:zero Z-:home &quot;
+#472 -s1 &quot;A-:probe Start:goto break &quot;
+#473 -s1 &quot;X-:all gotoz X+:x gotoz &quot;
+#474 -s1 &quot;Y+:y gotoz Z+:z gotoz &quot;
+#475 -s1 &quot;A-:go probe &quot;
+#476 -s1 &quot;X+:left X-:right Y+:up Y-:down &quot;
+#477 -s1 &quot;Z-:enter Z+:cancel &quot;
+#478 -s1 &quot;Y-:all zero X+:x zero &quot;
+#479 -s1 &quot;Y+:y zero Z+:z zero &quot;
+#480 -s1 &quot;Z-:all home X+:x home &quot;
+#481 -s1 &quot;Y+:y home Z+:z home &quot;
+#482 -s1  &quot;soft limit: &quot;
+#483 -s1  &quot;TRCUT &quot;
+#484 -s1  &quot;EDIT &quot;
+#485 -s1  &quot;SBK &quot;
+#495 -t1 -s1 &quot;interpolation period&quot; -s2 &quot;s&quot; -m16 -min=0.002 -max=0.010
+#497 -t1=0.000
+#498 -t0=4.000
+#499 -t1=888888.000 -s1 &quot;user access key&quot; -m16 -min=0.000 -max=999999.000
+</code></pre></div>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-22</span>
+      
+        <br>Created: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-22</span> 
+      
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../hardware/spindle/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Spindle" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Spindle
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../mods/" class="md-footer__link md-footer__link--next" aria-label="Next: Modifications and Improvements" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Modifications and Improvements
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Stephen Eaton
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/madeinoz67" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/madeinoz" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.indexes", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e84347e.min.js"></script>
+      
+    
+  </body>
+</html>
