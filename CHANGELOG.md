@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased](https://github.com/madeinoz67/omiocnc-x6-2200epl/tree/HEAD)
+
+**Merged pull requests:**
+
+- Bump gitpython from 3.1.24 to 3.1.30 [\#2](https://github.com/madeinoz67/omiocnc-x6-2200epl/pull/2)
+
 ## [v0.0.14](https://github.com/madeinoz67/omiocnc-x6-2200epl/tree/v0.0.14) (2021-10-22)
 
 ## [v0.0.13](https://github.com/madeinoz67/omiocnc-x6-2200epl/tree/v0.0.13) (2021-10-22)
